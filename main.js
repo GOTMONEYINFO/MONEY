@@ -407,10 +407,10 @@ async function claimTokens() {
 
         // Call the claimTokens function on your contract
         await contract.methods.claimTokens().send({from: accounts[0]});
-        alert('Tokens claimed!');
+        alert('Tokens claimed! Spread the word please');
     } catch (error) {
         console.error(error);
-        alert('You have already claimed tokens today!');
+        alert('You have canceled the transaction or You have already claimed tokens today!');
     }
 }
 
